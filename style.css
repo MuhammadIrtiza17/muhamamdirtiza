@@ -1,0 +1,245 @@
+*{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+body{
+    background-color: rgb(248, 222, 188);
+}
+header{
+    width: 90%;
+    position: fixed;
+    top: 3%;
+    font-size: small;
+    transform: translate(-50%, 0px);
+    left: 50%;
+    z-index:999
+}
+#project{
+    position:relative ;
+    width: 100%;
+    height: fit-content;
+    padding: 4% 0%;}
+
+.projects{
+    width: 80%;
+    height: 30em;
+    margin: 0% auto;
+    position: sticky;
+    top:2% ;
+    border-radius: 45px;
+    display: flex;
+    padding: 0% 3%;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    transition: 0.3s;
+}
+.projects:hover{
+    box-shadow: 0px 0px 9px 4px rgba(19, 18, 19, 0.774);
+}
+.projects:nth-child(1){
+    background-color: rgb(72, 51, 0);
+    top:0% ;
+}
+.projects:nth-child(2){
+    background-color: rgb(91, 64, 0);
+    top:0% ;
+}
+.projects:nth-child(3){
+    background-color: rgb(135, 94, 0);
+    top:0% ;
+}
+
+.projects:nth-child(4){
+    background-color: rgb(166, 116, 0);
+    top:0% ;
+
+}
+.projects:nth-child(5){
+    background-color: rgb(223, 156, 0);
+    top:0% ;
+
+}
+.div-items{
+    width: 50%;
+    color: white;
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#hero-div{
+    width: 80%;
+    margin: 0% auto;
+}
+.abt-item{
+    width: 30em;
+    height: 20em;
+    text-align: center;
+}
+#about{
+    width: 100%;
+    height: fit-content;
+}
+.first-section{
+
+    width: 80%;
+    display: flex;
+    margin: 2% auto;
+    justify-content: space-around;
+    align-items: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+
+  .btn{
+    width: 10em;
+    height: 3em;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    border-radius: 45px ;
+    border: none;
+    transition: 0.3s;
+  }
+  .btn:hover{
+     background-color: tomato;
+     box-shadow: 0px 0px 4px 2px rgba(51, 51, 51, 0.445);
+  }
+  .contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #contact
+  { display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    width: 80%;
+    margin: 0% auto;
+  }
+.contact-form form{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    width: 20em;
+    margin-bottom: 4%;
+    height: 3em;
+}
+input:active, input:focus , textarea:focus{
+    background-color: black;
+    color: white;
+}
+textarea{
+    margin-bottom: 4%;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+#name{
+     font-size: 7vmax;
+     margin-bottom: 0%;
+}
+h3{
+    font-size: 1.7rem;
+}
+.icons{
+    width: 5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 1%;
+    background-color: rgb(190, 182, 172);
+    box-shadow: 5px 3px 0px 0px rgba(143, 123, 97, 0.739);
+    transition: 0.4s;
+}
+.icons:hover{
+    box-shadow: -5px -3px 0px 0px rgba(143, 123, 97, 0.739);
+
+}
+.icons img{
+    width: 25px;
+}
+#iconbox{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:642px){
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    
+    }
+    .abt-item{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    #contact
+    { display: flex;
+        flex-direction: column;
+      justify-content: space-around;
+      align-items:center ;
+      width: 80%;
+      margin: 0% auto;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:496px){
+
+
+    .div-items p{
+        display: none;
+    }
+}
+
+#mouse{
+    width: 1em;
+    height: 1em;
+    border-radius: 45px;
+    background-color: black;
+    position: absolute;
+    z-index: 20000;
+}
